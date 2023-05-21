@@ -1,0 +1,11 @@
+previewsEnabled: true
+services:
+  - type: web
+    plan: starter
+    name: laneform
+    env: node
+    buildCommand: "npm ci && npm run build"
+    startCommand: "npm start"
+    envVars:
+      - key: TEST_ENV
+        sync: false
