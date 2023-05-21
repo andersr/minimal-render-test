@@ -1,7 +1,7 @@
 services:
   - type: web
-    plan: starter
-    name: laneform
+    plan: free
+    name: test
     env: node
     buildCommand: "npm ci && npm run build"
     startCommand: "npm start"
