@@ -8,5 +8,4 @@ services:
     startCommand: "npm start"
     envVars:
       - key: TEST_ENV
-        sync: false
       - fromGroup: staging
