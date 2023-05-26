@@ -16,4 +16,7 @@ services:
         value: "bla"
       - key: THIRD_ENV
         value: "bla"
+      - key: DATABASE_URL
+        sync: false
       - fromGroup: staging
+      - fromGroup: global
