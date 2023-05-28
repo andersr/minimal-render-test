@@ -7,16 +7,8 @@ services:
     buildCommand: "npm ci && npm run build"
     startCommand: "npm start"
     envVars:
-      - key: AWS_BUCKET_DIRECTORY
+      - key: SHOULD_COPY
         value: "prod"
         previewValue: "preview"
-      - key: DJANGO_SECRET_KEY
-        generateValue: true
-      - key: TEST_ENV
-        value: "bla"
-      - key: THIRD_ENV
-        value: "bla"
-      - key: DATABASE_URL
+      - key: DONT_COPY
         sync: false
-      - fromGroup: staging
-      - fromGroup: global
