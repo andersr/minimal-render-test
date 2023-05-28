@@ -14,3 +14,4 @@ services:
         previewValue: "preview"
       - key: DONT_COPY
         sync: false
+      - fromGroup: shared
